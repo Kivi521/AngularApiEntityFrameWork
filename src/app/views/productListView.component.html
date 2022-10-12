@@ -1,0 +1,15 @@
+﻿<div class="product-info">
+        <div *ngFor="let p of store.products" class="col-md-4">
+                <div class="border bg-light rounded p1">
+
+                    <h5>{{ p.name }} - {{ p.price }}</h5>
+                    <ul class="products-props">
+                        <li>Name:{{p.name}}</li>
+                        <li>Price: {{ p.price | currency }}</li>
+                      
+                    </ul>
+                    <button id="buyButton" class="btn btn-success" (click)="store.addToOrder(p)" >Buy</button>
+                     
+                </div>
+        </div>
+</div>
