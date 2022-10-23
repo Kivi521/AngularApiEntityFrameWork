@@ -8,7 +8,7 @@ const routes = [
 ];
 
 const router = RouterModule.forRoot(routes, {
-    useHash: false
+    useHash: true
   });
 
 export default router;

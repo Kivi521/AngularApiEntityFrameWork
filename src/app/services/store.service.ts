@@ -21,7 +21,7 @@ export class Store {
     loadProducts(): Observable<void> {
 
         console.log('hello');
-        return this.http.get<[]>("http://localhost:5002/api/OrderItem")
+        return this.http.get<[]>("http://localhost:5002/api/StockItem")
                 .pipe(map(data => {
                     this.products = data;
                     return;
